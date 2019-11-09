@@ -32,8 +32,9 @@ module.exports = {
     })
   },
   deleteHouse: (req, res) => {
+
     const db = req.app.get("db")
-    db.get_houses(req.params.id)
+    db.delete_house(req.params.id)
     .then(result => {
       res.status(200).send(result)
     })

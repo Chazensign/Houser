@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import House from './House/House';
 import {getHouses} from '../ducks/reducer'
 import {connect} from 'react-redux'
+import './Dashboard.css'
 
 class Dashboard extends Component {
   
@@ -11,9 +12,11 @@ class Dashboard extends Component {
   }
   render() { 
     return ( <div>
-      Dashboard
-      <Link to='/step1'><button>Add New Property</button></Link>
-      <div>
+      <div className='dash-head'>
+      <div>Dashboard</div>
+      <Link to='/wizard/step1'><button>Add New Property</button></Link>
+      </div>
+      <div className='green-back'>
         <House/>
       </div>
     </div> );

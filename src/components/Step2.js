@@ -8,14 +8,13 @@ class Step2 extends Component {
   render() { 
     return (
       <div>
-        Wizard2
         <div>Image URL</div>
         <input name="img" value={this.props.img} onChange={e => this.props.updateInfo(e.target)}/>
         <div className="nav-box">
-          <Link to="/step1">
+          <Link to="/wizard/step1">
             <button>Previous Step</button>
           </Link>
-          <Link to="/step3">
+          <Link to="/wizard/step3">
             <button>Next Step</button>
           </Link>
         </div>

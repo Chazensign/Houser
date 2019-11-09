@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
+import Routes2 from '../Routes2'
+import {cancelAdd} from '../ducks/reducer'
 
 class Wizard extends Component {
   
   render() { 
     return (
       <div>
-        Wizard
         <button>Cancel</button>
-        
+        {Routes2}
       </div>
     )
   }
@@ -23,5 +24,12 @@ const mapStateToProps = state => {
     zip: state.zip
   }
 }
+
+// const mapStateToProps = state => {
+//   return {
+    
+//   }
+// }
  
-export default connect(mapStateToProps, ) (Wizard);
+
+export default connect(cancelAdd) (Wizard);

@@ -52,7 +52,7 @@ class Step1 extends Component {
         />
         <div className='nav-box'>
           <Link to='/' ><button>Previous Step</button></Link>
-          <Link to='/step2' ><button>Next Step</button></Link>
+          <Link to='/wizard/step2' ><button>Next Step</button></Link>
         </div>
       </div>
     )

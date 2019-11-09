@@ -9,7 +9,7 @@ function App() {
   return (
     <HashRouter>
       <div>
-        <Header/>
+        <Header />
         {Routes}
       </div>
     </HashRouter>

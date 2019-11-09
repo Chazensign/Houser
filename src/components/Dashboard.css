@@ -1,0 +1,15 @@
+.dash-head {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 800px;
+  height: 50px;
+  align-self: center;
+}
+.green-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #AFD4C0;
+}

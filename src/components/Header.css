@@ -1,0 +1,12 @@
+header {
+  background: #519872;
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+
+}
+.title {
+  margin-left: 20px;
+  color: white;
+}

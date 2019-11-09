@@ -58,7 +58,7 @@ addHouse() {
           type="text"
         />
         <div className="nav-box">
-          <Link to="/step2">
+          <Link to="/wizard/step2">
             <button>Previous Step</button>
           </Link>
 
