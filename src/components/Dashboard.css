@@ -1,15 +1,43 @@
 .dash-head {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
   width: 800px;
-  height: 50px;
+  height: 70px;
   align-self: center;
+  background: #E5F4EC;
+}
+.dash-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dash {
+  font-size: 40px;
+  /* font-weight: 600; */
+}
+.line {
+  height: 2px;
+  width: 750px;
+  align-self: bottom;
+  background: black;
+}
+.add-prop {
+  height: 35px;
+  border: none;
+  background: #8AEA92;
+  font-size: 18px;
+  font-weight: 700;
 }
 .green-back {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background: #AFD4C0;
+  height: 100vh;
 }

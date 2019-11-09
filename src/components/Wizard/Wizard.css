@@ -1,0 +1,13 @@
+.add-new-list {
+  font-size: 32px;
+  padding-left: 20px;
+}
+.cancel-b {
+ margin-right: 30px;
+ font-size: 14px;
+ font-weight: 700;
+ border: none;
+ height: 29px;
+ width: 67px;
+ background: #FEC2C2;
+}

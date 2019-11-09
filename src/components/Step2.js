@@ -9,7 +9,12 @@ class Step2 extends Component {
     return (
       <div>
         <div>Image URL</div>
-        <input name="img" value={this.props.img} onChange={e => this.props.updateInfo(e.target)}/>
+        <input
+          className="address"
+          name="img"
+          value={this.props.img}
+          onChange={e => this.props.updateInfo(e.target)}
+        />
         <div className="nav-box">
           <Link to="/wizard/step1">
             <button>Previous Step</button>

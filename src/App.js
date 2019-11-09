@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { HashRouter } from "react-router-dom"
 import Routes from './Routes'
-import Header from './components/Header';
+import Header from './components/Header/Header';
 
 
 function App() {

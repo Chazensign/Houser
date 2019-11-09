@@ -1,6 +1,21 @@
-img {
-width: 180px;
+.del-img {
+width: 18px;
+height: 18px;
+position: absolute;
+right: 10px;
+top: 10px;
+}
+.home-list {
+  width: 750px;
+  margin-top: 20px;
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.house-pic {
 height: 180px;
+width: auto;
+padding-right: 10px;
 }
 .delete {
   width: 20px;
@@ -9,19 +24,28 @@ height: 180px;
 }
 .all-houses {
   width: 800px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #E5F4EC
+  justify-content: flex-start;
+  background: #E5F4EC;
 }
 .outer-house {
+  position: relative;
   background: #dedede;
   height: 200px;
+  width: 750px;
   display: flex;
   align-items: center;
   margin: 20px;
   padding: 10px;
 }
 .address-box {
+  height: 180px;
   width: 200px;
+}
+.mort-rent {
+  height: 180px;
+  margin: 10px;
 }

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux';
 import axios from 'axios';
-import {updateInfo} from '../ducks/reducer'
+import {updateInfo} from '../../ducks/reducer'
+import './Step3.css'
 
 
 
@@ -44,14 +45,18 @@ addHouse() {
   render() { 
     return (
       <div>
-        Wizard3
+        <div className='rr' >Recommended Rent: {this.props.mortgage * 1.25}</div>
+        <div>Monthly Mortgage Amount</div>
         <input
+          className="address"
           onChange={e => this.props.updateInfo(e.target)}
           name="mortgage"
           value={this.props.mortgage}
           type="text"
         />
+        <div>Desired Monthly Rent</div>
         <input
+          className="address"
           onChange={e => this.props.updateInfo(e.target)}
           name="rent"
           value={this.props.rent}

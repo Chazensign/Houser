@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #519872;
+  position: sticky;
+  top: 0px;
+}
+.logo {
+  height: 30px;
+  width: 40px;
+  align-self: unset;
+}
+.logo-title {
+  display: flex;
+  height: 60px;
+  /* justify-content: flex-start; */
+  align-items: center;
+  width: 800px;
+  display: flex;
+}
+.title {
+  margin-left: 20px;
+  color: white;
+}
+

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import {updateInfo} from '../ducks/reducer'
+import {updateInfo} from '../../ducks/reducer'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 import {connect} from 'react-redux'
+import './Step1.css'
 
 class Step1 extends Component {
   
@@ -24,11 +25,14 @@ class Step1 extends Component {
         />
         <div>Address</div>
         <input
+        className='address'
           name="address"
           value={this.props.address}
           type="text"
           onChange={event => this.handleChange(event)}
         />
+        <div className='csz' >
+        <div className='label-in' >
         <div>City</div>
         <input
           name="city"
@@ -36,20 +40,25 @@ class Step1 extends Component {
           type="text"
           onChange={event => this.handleChange(event)}
         />
+        </div>
+        <div className='label-in' >
         <div>State</div>
         <input
           name="state"
           value={this.props.state}
           type="text"
           onChange={event => this.handleChange(event)}
-        />
+        /><
+          /div>
+        <div className='label-in' >
         <div>Zip</div>
         <input
           name="zip"
           value={this.props.zip}
           type="text"
           onChange={event => this.handleChange(event)}
-        />
+        /></div>
+        </div>
         <div className='nav-box'>
           <Link to='/' ><button>Previous Step</button></Link>
           <Link to='/wizard/step2' ><button>Next Step</button></Link>
