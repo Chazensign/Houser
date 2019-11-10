@@ -23,7 +23,6 @@ class House extends Component {
     })
   }
   render() { 
-    console.log(this.props.houses)
     return ( 
       <div className='all-houses'>
         <div className='home-list' >Home Listings</div>

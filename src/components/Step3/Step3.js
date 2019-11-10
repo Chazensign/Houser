@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux';
 import axios from 'axios';
-import {updateInfo} from '../../ducks/reducer'
+import {updateInfo, cancelAdd} from '../../ducks/reducer'
 import './Step3.css'
 
 
@@ -16,7 +16,6 @@ class Step3 extends Component {
   }
 
 addHouse() {
-  console.log(this.props)
   let {
     propName,
   address,
@@ -38,15 +37,18 @@ addHouse() {
       mortgage,
       rent
     })
-    .then(() => console.log(this.props.history.push("/")))
+    .then(() => {
+      this.props.cancelAdd()
+      this.props.history.push("/")
+  })
     .catch(err => alert(err.response.data))
 }
 
   render() { 
     return (
-      <div>
-        <div className='rr' >Recommended Rent: {this.props.mortgage * 1.25}</div>
-        <div>Monthly Mortgage Amount</div>
+      <div className="all-input">
+        <div className="rr">Recommended Rent: {this.props.mortgage * 1.25}</div>
+        <div className="input-title">Monthly Mortgage Amount</div>
         <input
           className="address"
           onChange={e => this.props.updateInfo(e.target)}
@@ -54,7 +56,7 @@ addHouse() {
           value={this.props.mortgage}
           type="text"
         />
-        <div>Desired Monthly Rent</div>
+        <div className="input-title">Desired Monthly Rent</div>
         <input
           className="address"
           onChange={e => this.props.updateInfo(e.target)}
@@ -64,10 +66,12 @@ addHouse() {
         />
         <div className="nav-box">
           <Link to="/wizard/step2">
-            <button>Previous Step</button>
+            <button className="dg-button">Previous Step</button>
           </Link>
 
-          <button onClick={this.addHouse}>Complete</button>
+          <button className="add-prop" onClick={this.addHouse}>
+            Complete
+          </button>
         </div>
       </div>
     )
@@ -86,4 +90,4 @@ const mapStateToProps = state => {
     rent: state.rent
   }
 }
-export default connect(mapStateToProps, {updateInfo})(Step3);
+export default connect(mapStateToProps, {updateInfo, cancelAdd})(Step3);

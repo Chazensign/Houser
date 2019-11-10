@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
-import {updateInfo} from '../ducks/reducer'
+import {updateInfo} from '../../ducks/reducer'
 import {connect} from 'react-redux'
+import './Step2.css'
 
 
 class Step2 extends Component {
   render() { 
     return (
-      <div>
-        <div>Image URL</div>
+      <div className="all-input">
+        <div className="input-title">Image URL</div>
         <input
           className="address"
           name="img"
@@ -17,10 +18,10 @@ class Step2 extends Component {
         />
         <div className="nav-box">
           <Link to="/wizard/step1">
-            <button>Previous Step</button>
+            <button className="dg-button">Previous Step</button>
           </Link>
           <Link to="/wizard/step3">
-            <button>Next Step</button>
+            <button className="dg-button">Next Step</button>
           </Link>
         </div>
       </div>

@@ -19,7 +19,6 @@
 }
 .dash {
   font-size: 40px;
-  /* font-weight: 600; */
 }
 .line {
   height: 2px;
@@ -28,16 +27,18 @@
   background: black;
 }
 .add-prop {
-  height: 35px;
+  height: 40px;
   border: none;
   background: #8AEA92;
   font-size: 18px;
   font-weight: 700;
+  border-radius: 2px;
 }
 .green-back {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   background: #AFD4C0;
-  height: 100vh;
+  min-height: calc(100vh - 60px);
+  position: relative;
 }

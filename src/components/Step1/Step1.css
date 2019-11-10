@@ -1,9 +1,28 @@
+.all-input {
+  font-weight: 700;
+}
 .csz {
   display: flex;
+  width: 500px;
+}
+.input-title {
+  margin-left:10px;
 }
 .address {
-  width: 400px;
+  width: 500px;
 }
 input {
   margin-bottom: 20px;
+}
+.city {
+  width: 200px;
+}
+
+.state input {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.zip input {
+  width: 100px;
 }

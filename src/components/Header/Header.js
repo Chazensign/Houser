@@ -12,7 +12,7 @@ class Header extends Component {
       <header>
         <div>
           <div className="logo-title">
-            <img className="logo" src={logo} />
+            <img className="logo" src={logo} alt='logo' />
             <h1 className="title">Houser</h1>
           </div>
         </div>

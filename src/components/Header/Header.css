@@ -5,6 +5,7 @@ header {
   background: #519872;
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 .logo {
   height: 30px;
@@ -14,7 +15,6 @@ header {
 .logo-title {
   display: flex;
   height: 60px;
-  /* justify-content: flex-start; */
   align-items: center;
   width: 800px;
   display: flex;
